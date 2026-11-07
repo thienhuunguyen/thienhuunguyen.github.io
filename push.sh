@@ -2,7 +2,7 @@
 # push.sh — publish every local change in this folder to https://thienhuunguyen.github.io/
 #
 # Usage:
-#   ./push.sh                      # commit message = "Update website <date time>"
+#   ./push.sh                      # commit message = "Update"
 #   ./push.sh "Add 2026 papers"    # your own commit message
 #
 # What it does:
@@ -16,7 +16,7 @@ set -u
 cd "$(dirname "$0")" || exit 1
 
 SITE_URL="https://thienhuunguyen.github.io/"
-MSG="${1:-Update website $(date '+%Y-%m-%d %H:%M')}"
+MSG="${1:-Update}"
 
 # --- 1. Refresh publications.md (non-fatal) -------------------------------
 if command -v python3 >/dev/null 2>&1 && [ -f tools/parsePublication.py ]; then
@@ -92,7 +92,7 @@ for attempt in 1 2; do
   fi
   if [ "$attempt" = 1 ]; then
     echo "GitHub's deploy did not finish ($result). Retrying once..."
-    git commit -q --allow-empty -m "Retrigger Pages deploy" && git push -q origin main
+    git commit -q --allow-empty -m "Update" && git push -q origin main
   fi
 done
 echo "Deploy still not confirmed ($result). Check https://github.com/thienhuunguyen/thienhuunguyen.github.io/actions"
