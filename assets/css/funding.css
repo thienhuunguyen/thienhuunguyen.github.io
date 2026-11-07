@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+/* body {
+  background-color: #F5F9FC; 
+  font-family: 'Open Sans', sans-serif;
+} */
+
+/* .container {
+  margin-top: 60px;
+} */
+
+.funding-section-title h2 {
+  font-family: "lato", sans-serif !important;
+}
+
+
+.custom-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 20em;
+  max-width: 80%;
+  padding: 2em 0;
+  background: #FFF;
+  box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+  transition: all 0.35s ease;
+}
+.custom-card::before, .custom-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  height: 4px;
+}
+.custom-card::before {
+  width: 0;
+  opacity: 0;
+  transition: opacity 0 ease, width 0 ease;
+  transition-delay: 0.5s;
+}
+.custom-card::after {
+  width: 100%;
+  background: white;
+  transition: width 0.5s ease;
+}
+.custom-card .custom-content {
+  width: 18em;
+  max-width: 80%;
+}
+.custom-card .custom-logo {
+  margin: 0 0 1em;
+  width: 10.625em;
+  transition: all 0.35s ease;
+}
+.custom-card h6 {
+  color: #999;
+  font-weight: 600;
+  /*  text-transform: uppercase; */
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.67em;
+}
+.custom-card .custom-hover_content {
+  overflow: hidden;
+  max-height: 0;
+  transform: translateY(1em);
+  transition: all 0.55s ease;
+}
+.custom-card .custom-hover_content p {
+  margin: 1.5em 0 0;
+  color: #6E6E70;
+  line-height: 1.4em;
+}
+.custom-card:hover {
+  width: 24em;
+  box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+}
+.custom-card:hover::before {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease, width 0.5s ease;
+  transition-delay: 0;
+}
+.custom-card:hover::after {
+  width: 0;
+  opacity: 0;
+  transition: width 0 ease;
+}
+.custom-card:hover .custom-logo {
+  margin-bottom: 0.5em;
+}
+.custom-card:hover .custom-hover_content {
+  max-height: 10em;
+  transform: none;
+}
