@@ -332,6 +332,14 @@
 
 	[[To Appear]()]
 
+- **Identifying Speakers in Dialogue Transcripts: A Text-based Approach Using Pretrained Language Models**
+
+	Minh Nguyen, Franck Dernoncourt, Seunghyun Yoon, Hanieh Deilamsalehy, Hao Tan, Ryan Rossi, Quan Hung Tran, Trung Bui, and Thien Huu Nguyen
+
+	Proceedings of INTERSPEECH 2024
+
+	[[PAPER](https://arxiv.org/pdf/2407.12094v1)]
+
 - **Realistic Evaluation of Toxicity in Large Language Models**
 
 	Tinh Son Luong, Thanh-Thien Le, Linh Van Ngo, and Thien Huu Nguyen
