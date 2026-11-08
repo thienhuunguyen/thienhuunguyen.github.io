@@ -346,7 +346,7 @@
 
 	Findings of ACL 2024
 
-	[[To Appear]()]
+	[[PAPER](https://aclanthology.org/2024.findings-acl.61.pdf)]
 
 - **Counterfactual Augmentation for Robust Authorship Representation Learning**
 
